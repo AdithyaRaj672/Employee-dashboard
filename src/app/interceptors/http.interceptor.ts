@@ -30,9 +30,6 @@ export const httpInterceptor: HttpInterceptorFn = (request, next) => {
   // Handle the request and catch any errors
   return next(request).pipe(
     catchError((error: HttpErrorResponse) => {
-      console.error('HTTP Error:', error);
-      
-      // You can add more sophisticated error handling here
       let errorMessage = 'An error occurred';
       
       if (error.error instanceof ErrorEvent) {
@@ -43,6 +40,7 @@ export const httpInterceptor: HttpInterceptorFn = (request, next) => {
         errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
       }
       
+      console.error('HTTP Error:', errorMessage);
       return throwError(() => new Error(errorMessage));
     })
   );
