@@ -2,24 +2,24 @@
 
 A comprehensive Angular application for managing employee information with modern UI components.  
 
-## 🎯 Project Overview
+##  Project Overview
 
 This is a full-featured Employee Management Dashboard built with Angular v20+, TypeScript, and Angular Material. It provides CRUD operations for employee management with features like filtering, sorting, and real-time updates.
 
-## ✨ Features
+##  Features
 
-- ✅ Employee List with filtering by department
-- ✅ Add/Edit/Delete employees
-- ✅ View detailed employee information
-- ✅ Responsive design with Angular Material
-- ✅ Form validation
-- ✅ Custom pipes and directives
-- ✅ HTTP Interceptors for API communication
-- ✅ Route guards for authentication
-- ✅ RxJS Observables for reactive programming
-- ✅ Mock JSON Server for backend simulation
+-  Employee List with filtering by department
+-  Add/Edit/Delete employees
+-  View detailed employee information
+-  Responsive design with Angular Material
+-  Form validation
+-  Custom pipes and directives
+-  HTTP Interceptors for API communication
+-  Route guards for authentication
+-  RxJS Observables for reactive programming
+-  Mock JSON Server for backend simulation
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: Angular v20+
 - **Language**: TypeScript
@@ -29,14 +29,14 @@ This is a full-featured Employee Management Dashboard built with Angular v20+, T
 - **State Management**: RxJS Observables
 - **Forms**:  Reactive Forms + Template-Driven Forms
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js (v16+)
 - Angular CLI (v17+)
 - Git
 - VS Code (optional but recommended)
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Navigate to Project Directory
 ```bash
@@ -53,7 +53,7 @@ npm install
 npm install concurrently --save-dev
 ```
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Development Server (Single Command)
 ```bash
@@ -74,13 +74,13 @@ npm run serve-api
 npm start
 ```
 
-## 🌐 Access the Application
+##  Access the Application
 
 - **Frontend**: http://localhost:4200
 - **API**: http://localhost:3000
 - **Employees API**: http://localhost:3000/employees
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 employee-dashboard/
@@ -115,7 +115,7 @@ employee-dashboard/
 └── README.md
 ```
 
-## 🔄 CRUD Operations
+##  CRUD Operations
 
 ### Create Employee
 1. Click "Add Employee" in navbar
@@ -135,7 +135,7 @@ employee-dashboard/
 1. Click delete icon
 2. Confirm deletion
 
-## 🎨 Key Components
+##  Key Components
 
 | Component | Purpose |
 |-----------|---------|
