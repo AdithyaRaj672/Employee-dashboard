@@ -10,10 +10,22 @@ import { AuthGuard } from './services/auth.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { 
+    path: 'home', 
+    component: HomeComponent,
+    canActivate: [AuthGuard]
+  },
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'profile', component: ProfileComponent },
+  { 
+    path: 'dashboard', 
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
+  },
+  { 
+    path: 'profile', 
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
+  },
   { 
     path: 'employees', 
     component: EmployeeListComponent,
@@ -34,5 +46,5 @@ export const routes: Routes = [
     component: AddEditEmployeeComponent,
     canActivate: [AuthGuard]
   },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'login' }
 ];
